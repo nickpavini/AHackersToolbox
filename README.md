@@ -16,8 +16,10 @@ nmap -v -A 1.2.3.4
 
 DIRB
 ----
+Web scanner. Use this to find file paths, directories, etc; of content on a webapp
 
 ```
+dirb -w http://1.2.3.4
 ```
 
 
@@ -60,6 +62,9 @@ LinEnum
 -------
 Use this to assist in locating potential methods of privelege escalation on linux.
 
+**Download, make executable, and run**
 ```
+wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+chmod +x LinEnum.sh
+./LinEnum.sh -s -r report -t
 ```
-
