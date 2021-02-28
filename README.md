@@ -38,6 +38,15 @@ Brute force WiFi password cracking.
 ```
 
 
+HashID
+------
+Use this to assist in determining what type of hash is being dealt with. The output of this can help you determine settings needed in hashcat or johntheripper
+
+```
+hashid -m -j hash.txt
+```
+
+
 SSH2John
 --------
 Strip an ssh2 format private key file of its encryption hash for cracking with JohnTheRipper.
@@ -50,11 +59,22 @@ wget https://raw.githubusercontent.com/magnumripper/JohnTheRipper/bleeding-jumbo
 python ssh2john.py id_rsa > id_rsa.hash
 ```
 
+
 JohnTheRipper
 -------------
 Brute force password cracking of hashed passwords
 
 ```
+john --wordlist=/path/to/wordlist.txt --format=format hash.txt
+```
+
+
+HashCat
+-------
+Bruce force password cracking of hashes
+
+```
+hashcat -m 3200 hash.txt /path/to/wordlist
 ```
 
 
