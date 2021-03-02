@@ -5,6 +5,15 @@ A list of Penetration Testing (Hacking) tools that can be used, as well as some 
 
 ![Monty Python](intruder.png) ![Monty Python](intruder.png)
 
+
+Searchspoit
+-----------
+
+```
+searchsploit -w wordpress 4.x
+```
+
+
 Nmap
 ----
 Network scanning tool: Use this to identify open ports, running services and other information about the server.
