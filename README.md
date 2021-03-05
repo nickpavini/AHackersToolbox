@@ -82,6 +82,8 @@ HashCat
 -------
 Bruce force password cracking of hashes
 
+List of all hashcat modes: https://hashcat.net/wiki/doku.php?id=hashcat
+
 ```
 hashcat -m 3200 hash.txt /path/to/wordlist
 ```
