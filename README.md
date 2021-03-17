@@ -110,3 +110,11 @@ hydra -l Elliot -P fsocity.dic 10.10.103.0 -V http-form-post '/wp-login.php:log=
 
 hydra -l jan -P rockyou.txt ssh://1.2.3.4
 ```
+
+
+GTFOBins
+--------
+Unix binaries for many different methods of privelege escalation
+
+link: https://gtfobins.github.io/
+
